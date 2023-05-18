@@ -19,12 +19,13 @@ CREATE TABLE users (
 
 CREATE TABLE ads (
     id LONG PRIMARY KEY AUTO_INCREMENT,
+    user_id INT UNSIGNED NOT NULL,
     title VARCHAR(255) NOT NULL,
     description TEXT NOT NULL,
     cost DECIMAL(10, 2) NOT NULL,
     image VARCHAR(255) NOT NULL,
     category VARCHAR(255) NOT NULL,
-    FOREIGN KEY (id) REFERENCES users(id)
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
 -- Inserting data into the "users" table
