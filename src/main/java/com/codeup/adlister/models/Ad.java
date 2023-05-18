@@ -1,37 +1,38 @@
 package com.codeup.adlister.models;
 
 public class Ad {
-    private long id;
-    private long userId;
+    private int id;
+    private int userId;
     private String title;
     private String description;
+    private float cost;
+    private String image;
+    private String category;
 
-    public Ad(long id, long userId, String title, String description) {
+
+    public Ad(int id, int userId, String title, String description, float cost, String image, String category) {
         this.id = id;
         this.userId = userId;
         this.title = title;
         this.description = description;
+        this.cost = cost;
+        this.image = image;
+        this.category = category;
     }
 
-    public Ad(long userId, String title, String description) {
-        this.userId = userId;
-        this.title = title;
-        this.description = description;
-    }
-
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public long getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(long userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
@@ -50,4 +51,29 @@ public class Ad {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public float getCost() {
+        return cost;
+    }
+
+    public void setCost(float cost) {
+        this.cost = cost;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
 }
