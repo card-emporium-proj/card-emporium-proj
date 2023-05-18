@@ -4,7 +4,7 @@ CREATE DATABASE IF NOT EXISTS card_project_db;
 
 SHOW DATABASES;
 
-use card_project_db;
+USE card_project_db;
 
 DROP TABLE IF EXISTS ads;
 DROP TABLE IF EXISTS users;
