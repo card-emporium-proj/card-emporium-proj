@@ -1,0 +1,82 @@
+header {
+    background-image: url('/images/wrigley.jpeg');
+    background-size: cover;
+    height: 200px; /* Adjust the height as needed */
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 120px; /* Adjust the font size as needed */
+    padding: 20px;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+nav ul li:first-child {
+    margin-right: auto;
+}
+
+.ads-container h1 {
+    color: black;
+    font-size: 50px;
+}
+.ads-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ad-card {
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(30% - 20px); /* Adjust the width as needed */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.ad-card h2 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.ad-card p {
+    margin-bottom: 5px;
+}
+
+.ad-card img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+.ad-card .description {
+    max-height: 80px; /* Adjust the maximum height as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
