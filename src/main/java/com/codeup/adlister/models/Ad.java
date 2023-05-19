@@ -20,6 +20,10 @@ public class Ad {
         this.category = category;
     }
 
+    public Ad(long id, String title, String description, double cost, String image, String category) {
+
+    }
+
     public int getId() {
         return id;
     }
