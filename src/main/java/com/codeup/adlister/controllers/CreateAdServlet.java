@@ -24,13 +24,14 @@ public class CreateAdServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         User loggedInUser = (User) request.getSession().getAttribute("user");
+        float cost = Float.parseFloat(request.getParameter("cost")); // Convert cost to float
         Ad ad = new Ad(
-                loggedInUser.getId(),
-                request.getParameter("title"),
-                request.getParameter("description"),
-                Double.parseDouble(request.getParameter("cost")),
-                request.getParameter("image"),
-                request.getParameter("category")
+            loggedInUser.getId(),
+            request.getParameter("title"),
+            request.getParameter("description"),
+            cost,
+            request.getParameter("image"),
+            request.getParameter("category")
         );
         DaoFactory.getAdsDao().insert(ad);
         response.sendRedirect("/ads");
