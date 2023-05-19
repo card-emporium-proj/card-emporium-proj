@@ -4,8 +4,8 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="Create a new Ad" />
     </jsp:include>
-    <script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
-    <script type="module" src="${pageContext.request.contextPath}/javascript/filepicker.js"></script>
+<%--    <script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>--%>
+<%--    <script type="module" src="${pageContext.request.contextPath}/javascript/filepicker.js"></script>--%>
 </head>
 <body>
     <div class="container">
