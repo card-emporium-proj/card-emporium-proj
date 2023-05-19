@@ -8,7 +8,11 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-
+<div class="header-container">
+    <header>
+        <h1>Card Collector Emporium</h1>
+    </header>
+</div>
 <div class="container">
     <h1>Here Are all the ads!</h1>
 

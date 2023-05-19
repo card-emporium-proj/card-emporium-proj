@@ -10,6 +10,7 @@
 
     <div class="container">
         <h1>Welcome, ${sessionScope.user.username}!</h1>
+        <a href="http://localhost:8080/ads/create" class="btn btn-primary">Create a new Ad</a>
     </div>
 
 </body>
