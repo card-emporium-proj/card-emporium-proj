@@ -4,11 +4,17 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="Create a new Ad" />
     </jsp:include>
+    <script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
+    <script type="module" src="${pageContext.request.contextPath}/javascript/filepicker.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Create a new Ad</h1>
         <form action="/ads/create" method="post">
+            <div class="form-group">
+                <p>Add an image of your card here!</p>
+                <button name="image" id="open">Add Image</button>
+            </div>
             <div class="form-group">
                 <label for="title">Title</label>
                 <input id="title" name="title" class="form-control" type="text">
@@ -22,4 +28,3 @@
     </div>
 </body>
 </html>
-<script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>

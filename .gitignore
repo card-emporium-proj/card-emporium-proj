@@ -3,4 +3,4 @@ target/
 .idea/
 Config.java
 keys.js
-/src/main/webapp/WEB-INF/javascript/keys.js
+/src/main/webapp/javascript/keys.js
