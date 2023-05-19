@@ -16,6 +16,10 @@ public class User {
         this.email = email;
     }
 
+    public User(String username, String email, String hashpw) {
+
+    }
+
     public long getId() {
         return id;
     }
