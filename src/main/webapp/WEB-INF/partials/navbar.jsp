@@ -4,7 +4,12 @@
 
 
 <header>
-    <div class="card-box"></div>
+    <div class="card-img">
+        <div class="card">
+            <p>A</p>
+        </div>
+    </div>
+
     <h1 id="nav-title"><a href="/ads" >C.C.E</a></h1>
     <nav>
         <c:choose>

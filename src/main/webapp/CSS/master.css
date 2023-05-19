@@ -15,16 +15,12 @@ h1.header-text {
 }
 
 /*---NAVBAR---*/
-.card-box{
+.card-img{
     height: 40px;
     width: 25px;
-    background-color: green;
+    background-color: red;
     border-radius: 5px;
-    padding-right: 15px;
-}
-.card-box:hover{
-    transform: rotate(45deg);
-    transition: all ease .3s;
+    margin-right: 15px;
 }
 header li {
     list-style: none;
