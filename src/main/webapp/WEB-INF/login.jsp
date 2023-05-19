@@ -20,6 +20,7 @@
             </div>
             <input type="submit" class="btn btn-primary btn-block" value="Log In">
         </form>
+        <p>Dont have an account? <a href="${pageContext.request.contextPath}/register" >Sign Up Here!</a></p>
     </div>
 </body>
 </html>
