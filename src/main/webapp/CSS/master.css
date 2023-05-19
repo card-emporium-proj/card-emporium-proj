@@ -1,4 +1,4 @@
-header {
+.header-img {
     background-image: url('/images/wrigley.jpeg');
     background-size: cover;
     height: 200px; /* Adjust the height as needed */
@@ -6,38 +6,62 @@ header {
     border-radius: 10px;
 }
 
-h1 {
+h1.header-text {
     color: white;
     text-align: center;
-    font-size: 120px; /* Adjust the font size as needed */
+    font-size: 64px; /* Adjust the font size as needed */
     padding: 20px;
     margin: 0;
 }
 
-nav ul {
+/*---NAVBAR---*/
+.card-box{
+    height: 15px;
+    width: 10px;
+    background-color: green;
+}
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    /*font-family: Arial, Helvetica;*/
+}
+
+header {
     display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin: 0;
-    padding: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
 }
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 20px;
-    text-decoration: underline;
-}
-
-nav ul li:first-child {
+#nav-title {
     margin-right: auto;
+    font-size: 1.5em;
 }
 
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: #b2dfdb;
+}
+/*---END NAVBAR---*/
+
+/*---CARDS---*/
 .ads-container h1 {
     color: black;
     font-size: 50px;
@@ -79,4 +103,5 @@ nav ul li:first-child {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+/*---END CARDS---*/
 
