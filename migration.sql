@@ -39,7 +39,6 @@ CREATE TABLE ads (
 #     ( 'sarah_walker', 'sarahpass', 'sarah@example.com'),
 #     ( 'david_brown', 'david123', 'david@example.com');
 
-
 INSERT INTO `ads` (user_id, title, description, cost, image, category) VALUES
                         (1,'Michael Jordan Rookie Card','Rare Michael Jordan rookie card in mint condition.',5000.00,'https://cconnect.s3.amazonaws.com/wp-content/uploads/2019/03/1986-87-Fleer-Michael-Jordan-57-RC-Authentic-Rookie-Card.jpg','Sports'),
                         (1,'Charizard Pokémon Card','1st Edition Charizard card in near-mint condition.',3000.00,'https://product-images.tcgplayer.com/fit-in/870x870/106999.jpg','Pokemon'),
@@ -57,3 +56,4 @@ INSERT INTO `ads` (user_id, title, description, cost, image, category) VALUES
                         (1,'Zapdos Pokémon Card','Holographic Zapdos card, electric type Pokémon.',300.00,'https://product-images.tcgplayer.com/fit-in/870x870/42356.jpg','Pokemon'),
                         (1,'Jace, the Mind Sculptor Magic Card','Jace, the Mind Sculptor card, a planeswalker of immense power.',2000.00,'https://product-images.tcgplayer.com/fit-in/870x870/158250.jpg','Magic'),
                         (1,'Mickey Mantle Rookie Card','The Holy Grail of baseball cards.',10000000.00,'https://imageio.forbes.com/blogs-images/davidseideman/files/2018/04/resizedmantle.jpg?format=jpg&width=960','Sports');
+

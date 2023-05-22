@@ -7,7 +7,7 @@ public class Ad {
     private String description;
     private float cost;
     private String image;
-    private String category;
+    private String category;;
 
 
     public Ad(long id, long userId, String title, String description, float cost, String image, String category) {
