@@ -23,8 +23,8 @@ public class Ad {
     public Ad() {
     }
 
-    public Ad(long id, String title, String description, Float cost, String image, String category) {
-    this.id = id;
+    public Ad(long userId, String title, String description, Float cost, String image, String category) {
+    this.userId = userId;
     this.title = title;
     this.description = description;
     this.cost = cost;
