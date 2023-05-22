@@ -13,8 +13,9 @@
         <h1>Welcome, ${sessionScope.user.username}!</h1>
         <a href="http://localhost:8080/ads/create" class="ui-button">Create a new Ad</a>
     </div>
-<c:if test="${sessionScope.user.id == sessionScope.ads.user_id}">
-    <c:forEach var="ad" items="${ads}">
+
+<c:forEach var="ad" items="${ads}">
+    <c:if test="${sessionScope.user.id == ad.userId}">
         <div class="ad-card">
             <h2>${ad.title}</h2>
             <p>${ad.category}</p>
@@ -24,9 +25,15 @@
                 <p class="cost">${ad.cost}</p>
                 <button class="buy-button">Buy</button>
             </div>
+            <form action="/ads/delete" method="POST">
+                <button type="submit" class="delete-button">Delete Post</button>
+                <input name="ad-id" hidden="hidden" value="${ad.id}">
+            </form>
+            <a href="/ads/update?ad-id=${ad.id}}">Edit</a>
         </div>
-    </c:forEach>
-</c:if>
+    </c:if>
+</c:forEach>
+
 
 </body>
 </html>
