@@ -1,6 +1,4 @@
-
-
-header {
+.header-img {
     background-image: url('/images/wrigley.jpeg');
     background-size: cover;
     height: 200px; /* Adjust the height as needed */
@@ -8,38 +6,71 @@ header {
     border-radius: 10px;
 }
 
-h1 {
+h1.header-text {
     color: white;
     text-align: center;
-    font-size: 100px; /* Adjust the font size as needed */
+    font-size: 64px; /* Adjust the font size as needed */
     padding: 20px;
     margin: 0;
 }
 
-nav ul {
+/*---NAVBAR---*/
+.card-img{
+    height: 40px;
+    width: 25px;
+    background-color: antiquewhite;
+    border: 1px solid red;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.card p {
     display: flex;
-    justify-content: space-between;
-    list-style-type: none;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+* {
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    /*font-family: Arial, Helvetica;*/
 }
 
-nav ul li {
-    display: inline;
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
 }
 
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 20px;
-    text-decoration: underline;
-}
-
-nav ul li:first-child {
+#nav-title {
     margin-right: auto;
+    font-size: 1.5em;
 }
 
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: #b2dfdb;
+}
+/*---END NAVBAR---*/
+
+/*---CARDS---*/
 .ads-container h1 {
     color: black;
     font-size: 50px;
@@ -47,7 +78,7 @@ nav ul li:first-child {
 .ads-card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .ad-card {
@@ -55,7 +86,7 @@ nav ul li:first-child {
     border-radius: 5px;
     padding: 10px;
     width: calc(30% - 20px); /* Adjust the width as needed */
-    margin-bottom: 20px;
+    margin: 15px;
     box-sizing: border-box;
 }
 .ad-header-container {
@@ -73,6 +104,7 @@ nav ul li:first-child {
     color: #333333;
     font-size: 60px;
 }
+
 .ad-card h2 {
     font-size: 20px;
     margin-top: 0;
@@ -147,6 +179,10 @@ nav ul li:first-child {
     background-color: #ccc;
 }
 
+.filter-buttons button:active {
+    background-color: #e0e0e0;
+}
+
 .register-row {
     display: flex;
     justify-content: center;
@@ -202,4 +238,38 @@ label {
 
 .btn-primary:hover {
     background-color: #0056b3;
+}
+/*---END CARDS---*/
+
+
+.user-actions {
+    padding: 40px 0;
+    margin-left: 40px;
+}
+
+.user-actions h3 {
+    font-size: 24px;
+}
+
+.user-actions ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.user-actions li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.user-actions a.ui-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.user-actions a.ui-button:hover {
+    background-color: #ff6600;
 }

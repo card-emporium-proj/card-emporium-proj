@@ -17,7 +17,9 @@ public class User {
     }
 
     public User(String username, String email, String hashpw) {
-
+        this.username = username;
+        this.password = hashpw;
+        this.email = email;
     }
 
     public long getId() {

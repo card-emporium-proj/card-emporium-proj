@@ -8,6 +8,11 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
+<div class="header-container">
+    <header class="header-img">
+        <h1 class="header-text">Card Collector Emporium</h1>
+    </header>
+</div>
 
 <div class="container">
     <div class="filter-bar">
@@ -21,9 +26,9 @@
             <button class="filter-button" onclick="filterAds('magic')">Magic</button>
         </div>
     </div>
-        <div class="ad-header-container">
-            <h3 class="ad-header">Available for Purchase</h3>
-        </div>
+    <div class="ad-header-container">
+        <h3 class="ad-header">Available for Purchase</h3>
+    </div>
     <div class="ads-card-container">
         <c:forEach var="ad" items="${ads}">
             <div class="ad-card">
@@ -53,7 +58,6 @@
         }
     }
 </script>
-
 
 </body>
 </html>
