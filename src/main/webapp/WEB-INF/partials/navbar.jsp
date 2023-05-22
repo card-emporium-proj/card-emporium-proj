@@ -13,6 +13,7 @@
         <c:choose>
             <c:when test="${sessionScope.user != null}">
                 <ul>
+                    <li><a href="/ads/create" class="nav-link">Create Ad</a></li>
                     <li><a href="/profile" class="nav-link">${sessionScope.user.username} logged in</a></li>
                     <li><a href="/logout" class="nav-link">Logout</a></li>
                 </ul>

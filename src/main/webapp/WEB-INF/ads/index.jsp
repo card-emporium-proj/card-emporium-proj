@@ -15,6 +15,9 @@
 </div>
 
 <div class="container">
+    <div class="search-bar-container">
+        <input type="text" id="searchBar" placeholder="Search ads..." onkeyup="searchAds()">
+    </div>
     <div class="filter-bar">
         <div class="filter-text">
             <h2>Filter ads by type:</h2>
@@ -44,20 +47,45 @@
         </c:forEach>
     </div>
 </div>
+  
+    <script>
 
-<script>
-    function filterAds(type) {
-        var cards = document.getElementsByClassName("ad-card");
-        for (var i = 0; i < cards.length; i++) {
-            var category = cards[i].querySelector("p").textContent.trim();
-            if (type === 'all' || category.toLowerCase() === type.toLowerCase()) {
-                cards[i].style.display = 'block';
-            } else {
-                cards[i].style.display = 'none';
-            }
+function filterAds(type) {
+    let cards = document.getElementsByClassName("ad-card");
+    for (let i = 0; i < cards.length; i++) {
+        let category = cards[i].querySelector("p").textContent.trim();
+        if (type === 'all' || category.toLowerCase() === type.toLowerCase()) {
+            cards[i].style.display = 'block';
+        } else {
+            cards[i].style.display = 'none';
         }
     }
-</script>
+}
+
+        function searchAds() {
+            let input = document.getElementById("searchBar");
+            let filter = input.value.toUpperCase();
+            let adCards = document.getElementsByClassName("ad-card");
+
+            for (let i = 0; i < adCards.length; i++) {
+                let title = adCards[i].querySelector("h2").textContent.trim().toUpperCase();
+                let category = adCards[i].querySelector("p").textContent.trim().toLowerCase();
+
+                if (category.includes(filter) || title.includes(filter)) {
+                    adCards[i].style.display = 'block'; // Display matching ads
+                } else {
+                    adCards[i].style.display = 'none'; // Hide non-matching ads
+                }
+            }
+        }
+
+        function handleFilterClick(type) {
+            filterAds(type);
+            searchAds();
+        }
+
+    </script>
+
 
 </body>
 </html>
