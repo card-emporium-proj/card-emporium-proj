@@ -25,7 +25,7 @@ public class CreateAdServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         User loggedInUser = (User) request.getSession().getAttribute("user");
         float cost = Float.parseFloat(request.getParameter("cost")); // Convert cost to float
-        String img = request.getParameter("image");
+        String img = request.getParameter("image-url");
         if (img == null){
             img = "https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder-1024x1024.png";
         }
