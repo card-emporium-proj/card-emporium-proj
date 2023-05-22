@@ -7,8 +7,9 @@
     </jsp:include>
 </head>
 <body>
-<jsp:include page="/WEB-INF/partials/navbar.jsp" />
-<div class="header-container">
+<div class="sticky">
+    <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
+</div><div class="header-container">
     <header class="header-img">
         <h1 class="header-text">Card Collector Emporium</h1>
     </header>

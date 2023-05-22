@@ -6,11 +6,12 @@
     --purple: #451E5D
 }
 
-/*nav {*/
-/*    position: fixed;*/
-/*    z-index:999;*/
-/*    width: 100%*/
-/*}*/
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
 
 .header-img {
     background-image: url('/images/wrigley.jpeg');
