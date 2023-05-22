@@ -40,7 +40,7 @@
                 <img src="${ad.image}" alt="Ad Image">
                 <p class="description">${ad.description}</p>
                 <div class="ad-footer">
-                    <p class="cost">${ad.cost}</p>
+                    <p class="cost">$${ad.cost}</p>
                     <button class="buy-button">Buy</button>
                 </div>
             </div>

@@ -30,7 +30,7 @@
                 <img src="${ad.image}" alt="Ad Image">
                 <p class="description">${ad.description}</p>
                 <div class="ad-footer">
-                    <p class="cost">${ad.cost}</p>
+                    <p class="cost">$${ad.cost}</p>
                 </div>
                 <form action="/ads/delete" method="POST">
                     <button type="submit" class="delete-button">Delete Post</button>
