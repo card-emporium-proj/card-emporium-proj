@@ -57,8 +57,6 @@ CREATE TABLE ads (
 #     (1, 'Zapdos Pokémon Card', 'Holographic Zapdos card, electric type Pokémon.', 300.00, 'image14.jpg', 'Pokémon'),
 #     (1, 'Jace, the Mind Sculptor Magic Card', 'Jace, the Mind Sculptor card, a planeswalker of immense power.', 2000.00, 'image15.jpg', 'Magic');
 
-<<<<<<< HEAD
-
 INSERT INTO `ads` (user_id, title, description, cost, image, category) VALUES
                         (1,'Michael Jordan Rookie Card','Rare Michael Jordan rookie card in mint condition.',5000.00,'https://cconnect.s3.amazonaws.com/wp-content/uploads/2019/03/1986-87-Fleer-Michael-Jordan-57-RC-Authentic-Rookie-Card.jpg','Sports'),
                         (1,'Charizard Pokémon Card','1st Edition Charizard card in near-mint condition.',3000.00,'https://product-images.tcgplayer.com/fit-in/870x870/106999.jpg','Pokemon'),

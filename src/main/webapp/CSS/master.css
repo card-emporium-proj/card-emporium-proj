@@ -179,6 +179,10 @@ header a:hover {
     background-color: #ccc;
 }
 
+.filter-buttons button:active {
+    background-color: #e0e0e0;
+}
+
 .register-row {
     display: flex;
     justify-content: center;
