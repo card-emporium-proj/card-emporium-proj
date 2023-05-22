@@ -20,21 +20,8 @@
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input id="password" name="password" class="form-control" type="password" onkeyup="function passConfirm() {
-                let password = document.getElementById(`password`).value;
-                let confirmPassword = document.getElementById(`confirm_password`).value;
-                let message = document.getElementById(`message`);
-                if (password === confirmPassword) {
-                    message.style.color = `green`;
-                    message.innerHTML = `Passwords match.`
-                } else {
-                    message.style.color = `red`;
-                    message.innerHTML = `Passwords do not match.`
-                }
-                document.getElementById(`password`).onkeyup = passConfirm;
-                document.getElementById(`confirm_password`).onkeyup = passConfirm;
-                }
-                passConfirm()">
+                <input id="password" name="password" class="form-control" type="password" onkeyup="passConfirm()">
+
             </div>
             <div class="form-group">
                 <label for="confirm_password">Confirm Password:</label>
@@ -44,5 +31,23 @@
             <input type="submit" class="btn btn-primary btn-block">
         </form>
     </div>
+<script>
+
+    function passConfirm() {
+        let password = document.getElementById(`password`).value;
+        let confirmPassword = document.getElementById(`confirm_password`).value;
+        let message = document.getElementById(`message`);
+        if (password === confirmPassword) {
+            message.style.color = `green`;
+            message.innerHTML = `Passwords match.`
+        } else {
+            message.style.color = `red`;
+            message.innerHTML = `Passwords do not match.`
+        }
+        document.getElementById(`password`).onkeyup = passConfirm;
+        document.getElementById(`confirm_password`).onkeyup = passConfirm;
+    }
+
+</script>
 </body>
 </html>
