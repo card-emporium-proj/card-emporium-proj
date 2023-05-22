@@ -36,7 +36,7 @@
                     <button type="submit" class="delete-button">Delete Post</button>
                     <input name="ad-id" hidden="hidden" value="${ad.id}">
                 </form>
-                <a href="/ads/update?ad-id=${ad.id}}">Edit</a>
+                <a href="${pageContext.request.contextPath}/ads/update?ad-id=${ad.id}">Edit</a>
             </div>
         </c:if>
     </c:forEach>
