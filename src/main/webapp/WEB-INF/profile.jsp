@@ -7,32 +7,40 @@
     </jsp:include>
 </head>
 <body>
-    <jsp:include page="/WEB-INF/partials/navbar.jsp" />
+<jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-    <div class="container">
-        <h1>Welcome, ${sessionScope.user.username}!</h1>
-        <a href="http://localhost:8080/ads/create" class="ui-button">Create a new Ad</a>
-    </div>
-
-<c:forEach var="ad" items="${ads}">
-    <c:if test="${sessionScope.user.id == ad.userId}">
-        <div class="ad-card">
-            <h2>${ad.title}</h2>
-            <p>${ad.category}</p>
-            <img src="${ad.image}" alt="Ad Image">
-            <p class="description">${ad.description}</p>
-            <div class="ad-footer">
-                <p class="cost">${ad.cost}</p>
-                <button class="buy-button">Buy</button>
+<div class="container">
+    <h1>Welcome to your profile page, ${sessionScope.user.username}!</h1>
+</div>
+<div class="user-actions">
+    <h3>Manage Your Listings:</h3>
+    <ul>
+        <li>View all your current listings</li>
+        <li>Edit your current listings</li>
+        <li>Delete your current listings</li>
+        <a href="http://localhost:8080/ads/create" class="ui-button">Click Here To create a new Ad</a>
+    </ul>
+</div>
+<div class="ads-card-container">
+    <c:forEach var="ad" items="${ads}">
+        <c:if test="${sessionScope.user.id == ad.userId}">
+            <div class="ad-card">
+                <h2>${ad.title}</h2>
+                <p>${ad.category}</p>
+                <img src="${ad.image}" alt="Ad Image">
+                <p class="description">${ad.description}</p>
+                <div class="ad-footer">
+                    <p class="cost">${ad.cost}</p>
+                </div>
+                <form action="/ads/delete" method="POST">
+                    <button type="submit" class="delete-button">Delete Post</button>
+                    <input name="ad-id" hidden="hidden" value="${ad.id}">
+                </form>
+                <a href="${pageContext.request.contextPath}/ads/update?ad-id=${ad.id}">Edit</a>
             </div>
-            <form action="/ads/delete" method="POST">
-                <button type="submit" class="delete-button">Delete Post</button>
-                <input name="ad-id" hidden="hidden" value="${ad.id}">
-            </form>
-            <a href="/ads/update?ad-id=${ad.id}}">Edit</a>
-        </div>
-    </c:if>
-</c:forEach>
+        </c:if>
+    </c:forEach>
+</div>
 
 
 </body>

@@ -47,7 +47,7 @@
         </c:forEach>
     </div>
 </div>
-
+  
     <script>
 
 function filterAds(type) {
@@ -85,6 +85,7 @@ function filterAds(type) {
         }
 
     </script>
+
 
 </body>
 </html>
