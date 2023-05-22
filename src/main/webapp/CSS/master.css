@@ -241,3 +241,35 @@ label {
 }
 /*---END CARDS---*/
 
+
+.user-actions {
+    padding: 40px 0;
+    margin-left: 40px;
+}
+
+.user-actions h3 {
+    font-size: 24px;
+}
+
+.user-actions ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.user-actions li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.user-actions a.ui-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.user-actions a.ui-button:hover {
+    background-color: #ff6600;
+}

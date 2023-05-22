@@ -45,19 +45,19 @@
     </div>
 </div>
 
-    <script>
-        function filterAds(type) {
-            var cards = document.getElementsByClassName("ad-card");
-            for (var i = 0; i < cards.length; i++) {
-                var category = cards[i].querySelector("p").textContent.trim();
-                if (type === 'all' || category.toLowerCase() === type.toLowerCase()) {
-                    cards[i].style.display = 'block';
-                } else {
-                    cards[i].style.display = 'none';
-                }
+<script>
+    function filterAds(type) {
+        var cards = document.getElementsByClassName("ad-card");
+        for (var i = 0; i < cards.length; i++) {
+            var category = cards[i].querySelector("p").textContent.trim();
+            if (type === 'all' || category.toLowerCase() === type.toLowerCase()) {
+                cards[i].style.display = 'block';
+            } else {
+                cards[i].style.display = 'none';
             }
         }
-    </script>
+    }
+</script>
 
 </body>
 </html>
