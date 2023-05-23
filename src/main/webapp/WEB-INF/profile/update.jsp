@@ -11,7 +11,7 @@
 
 <div class="container">
     <h1>Editing Your Profile: </h1>
-    <form action="${pageContext.request.contextPath}/ads/profileupdate" method="post">
+    <form action="${pageContext.request.contextPath}/profile/update" method="post">
         <div class="form-group">
             <label for="username">Username:</label>
             <input id="username" name="username" class="form-control" type="text" value="${user.username}">

@@ -16,7 +16,7 @@
 <div class="row">
     <div class="column">
         <h4>${sessionScope.user.email}</h4>
-        <a href="${pageContext.request.contextPath}/ads/profileupdate?user-id=${sessionScope.user.id}"><strong>Edit Profile Information</strong></a>
+        <a href="${pageContext.request.contextPath}/profile/update?user-id=${sessionScope.user.id}"><strong>Edit Profile Information</strong></a>
     </div>
 </div>
 <div class="align-center text-center justify-center">
