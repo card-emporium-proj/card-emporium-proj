@@ -7,7 +7,7 @@
 </head>
 <body>
     <jsp:include page="partials/navbar.jsp" />
-    <div class="container">
+    <div class="container login">
         <h1>Please fill in your information.</h1>
         <form action="/register" method="post">
             <div class="form-group">
@@ -27,7 +27,7 @@
                 <label for="confirm_password">Confirm Password:</label>
                 <input id="confirm_password" name="confirm_password" class="form-control" type="password">
             </div>
-            <div id="message"></div>
+            <div class="justify-center align-center text-center" id="message"></div>
             <input type="submit" class="btn btn-primary btn-block">
         </form>
     </div>
@@ -38,7 +38,7 @@
         let confirmPassword = document.getElementById(`confirm_password`).value;
         let message = document.getElementById(`message`);
         if (password === confirmPassword) {
-            message.style.color = `green`;
+            message.style.color = `darkorange`;
             message.innerHTML = `Passwords match.`
         } else {
             message.style.color = `red`;

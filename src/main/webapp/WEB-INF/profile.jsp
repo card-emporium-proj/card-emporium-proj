@@ -9,17 +9,19 @@
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-<div class="container">
+<div class="container login">
     <h1>Welcome to your profile page, ${sessionScope.user.username}!</h1>
 </div>
-<div class="user-actions">
-    <h3>Manage Your Listings:</h3>
-    <ul>
-        <li>View all your current listings</li>
-        <li>Edit your current listings</li>
-        <li>Delete your current listings</li>
-        <a href="http://localhost:8080/ads/create" class="ui-button">Click Here To create a new Ad</a>
-    </ul>
+<div class="align-center text-center justify-center">
+    <div class="user-actions">
+        <h3>Manage Your Listings:</h3>
+        <ul>
+            <li>View all your current listings</li>
+            <li>Edit your current listings</li>
+            <li>Delete your current listings</li>
+            <a href="http://localhost:8080/ads/create" class="ui-button">Click Here To create a new Ad</a>
+        </ul>
+    </div>
 </div>
 <div class="ads-card-container">
     <c:forEach var="ad" items="${ads}">
@@ -33,10 +35,10 @@
                     <p class="cost">${ad.cost}</p>
                 </div>
                 <form action="/ads/delete" method="POST">
-                    <button type="submit" class="delete-button">Delete Post</button>
-                    <input name="ad-id" hidden="hidden" value="${ad.id}">
+                    <button type="submit" class="delete-button button-border-medium">Delete Post</button>
+                    <input class="button-border-medium" name="ad-id" hidden="hidden" value="${ad.id}">
                 </form>
-                <a href="${pageContext.request.contextPath}/ads/update?ad-id=${ad.id}">Edit</a>
+                <a class="button-border-medium" href="${pageContext.request.contextPath}/ads/update?ad-id=${ad.id}"><span class="color-orange">Edit</span></a>
             </div>
         </c:if>
     </c:forEach>

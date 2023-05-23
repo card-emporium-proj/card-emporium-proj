@@ -11,23 +11,26 @@
     <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
 </div><div class="header-container">
     <header class="header-img">
-        <h1 class="header-text">Card Collector Emporium</h1>
+        <h1 class="header-text text-outline">Card Collector Emporium</h1>
     </header>
 </div>
 
-<div class="container">
-    <div class="search-bar-container">
-        <input type="text" id="searchBar" placeholder="Search ads..." onkeyup="searchAds()">
-    </div>
-    <div class="filter-bar">
-        <div class="filter-text">
-            <h2>Filter ads by type:</h2>
+<div class="container grow">
+    <div class="filter-box grow">
+        <div class="search-bar-container justify-center align-center grow ">
+            <label for="searchBar">Filter:</label>
+            <input type="text" id="searchBar" placeholder="Filter ads..." onkeyup="searchAds()">
         </div>
-        <div class="filter-buttons">
-            <button class="filter-button" onclick="filterAds('all')">All</button>
-            <button class="filter-button" onclick="filterAds('sports')">Sports</button>
-            <button class="filter-button" onclick="filterAds('pokemon')">Pokemon</button>
-            <button class="filter-button" onclick="filterAds('magic')">Magic</button>
+        <div class="filter-bar">
+            <div class="filter-text">
+                <h2>Filter ads by type:</h2>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-button" onclick="filterAds('all')">All</button>
+                <button class="filter-button" onclick="filterAds('sports')">Sports</button>
+                <button class="filter-button" onclick="filterAds('pokemon')">Pokemon</button>
+                <button class="filter-button" onclick="filterAds('magic')">Magic</button>
+            </div>
         </div>
     </div>
     <div class="ad-header-container">
