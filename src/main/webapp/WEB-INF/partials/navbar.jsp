@@ -5,7 +5,7 @@
 
 <header>
     <div class="card-img">
-        <a href="${pageContext.request.contextPath}/index.jsp" ><div class="card"><p>A</p></div></a>
+        <a href="${pageContext.request.contextPath}/links.jsp" ><div class="card"><p>Y</p></div></a>
     </div>
 
     <h1 id="nav-title" class="color-white"><a href="/ads" >Card Collector Emporium</a></h1>

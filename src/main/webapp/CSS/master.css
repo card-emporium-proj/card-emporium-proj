@@ -425,3 +425,21 @@ label {
     color:var(--light-orange);
 }
 
+ .links {
+     margin-top: 20px;
+ }
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links li {
+    margin-bottom: 10px;
+}
+
+.links a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
