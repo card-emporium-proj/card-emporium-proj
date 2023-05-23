@@ -5,7 +5,11 @@
 
 <header>
     <div class="card-img">
-        <a href="${pageContext.request.contextPath}/links.jsp" ><div class="card color-orange"><p>YT</p></div></a>
+        <a href="${pageContext.request.contextPath}/links.jsp">
+            <div class="card">
+                <img class="image-height" src="/images/yt.png" alt="YouTube Logo">
+            </div>
+        </a>
     </div>
 
     <h1 id="nav-title" class="color-white"><a href="/ads" >Card Collector Emporium</a></h1>
