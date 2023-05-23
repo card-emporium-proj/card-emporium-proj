@@ -9,7 +9,7 @@
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 <div class="container links">
-    <h1 class="links header">Card Break YouTube Channels</h1>
+    <h1 class="links link-header">Card Break YouTube Channels</h1>
     <ul>
         <li><a href="https://www.youtube.com/@PackmanCards">PackmanCards</a></li>
         <li><a href="https://www.youtube.com/@ChiCityPulls">ChiCityPulls</a></li>
