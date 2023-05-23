@@ -8,8 +8,8 @@
         <a href="${pageContext.request.contextPath}/index.jsp" ><div class="card"><p>A</p></div></a>
     </div>
 
-    <h1 id="nav-title"><a href="/ads" >C.C.E</a></h1>
     <nav class="color-white">
+    <h1 id="nav-title"><a href="/ads" >Card Collector Emporium</a></h1>
         <c:choose>
             <c:when test="${sessionScope.user != null}">
                 <ul>
