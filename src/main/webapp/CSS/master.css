@@ -178,12 +178,17 @@ header a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: var(--gray);
+    background-color: rgb(34,42,42, 0.6);
+    border-radius: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid rgb(27,27,27);
+    margin-top: 15px;
 }
 
 .ad-card {
-    border: 5px solid #ccc;
-    border-radius: 5px;
+    border: 5px solid var(--organge-color);
+    border-radius: 10px;
     padding: 10px;
     width: 250px;
     margin: 15px;
@@ -443,3 +448,13 @@ label {
     color: #000;
     text-decoration: none;
 }
+
+.image-add {
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.image-add:hover {
+    color: var(--organge-color)
+}
+
