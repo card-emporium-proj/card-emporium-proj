@@ -297,6 +297,10 @@ input {
     margin-bottom: 20px;
 }
 
+.user-actions .column {
+    align-items: center;
+}
+
 .filter-bar h3 {
     margin: 0;
     font-size: 18px;
