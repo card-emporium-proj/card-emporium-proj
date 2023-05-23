@@ -8,20 +8,20 @@
         <a href="${pageContext.request.contextPath}/index.jsp" ><div class="card"><p>A</p></div></a>
     </div>
 
+    <nav class="color-white">
     <h1 id="nav-title"><a href="/ads" >Card Collector Emporium</a></h1>
-    <nav>
         <c:choose>
             <c:when test="${sessionScope.user != null}">
                 <ul>
                     <li><a href="/ads/create" class="nav-link">Create Ad</a></li>
                     <li><a href="/profile" class="nav-link">${sessionScope.user.username} logged in</a></li>
-                    <li><a href="/logout" class="nav-link">Logout</a></li>
+                    <li><a href="/logout" class="nav-link"><span class="button-border">Logout</span></a></li>
                 </ul>
             </c:when>
             <c:otherwise>
                 <ul>
                     <li><a href="/login" class="nav-link">User not logged in</a></li>
-                    <li><a href="/login" class="nav-link">Login</a></li>
+                    <li><a href="/login" class="nav-link button-border">Login</a></li>
                 </ul>
             </c:otherwise>
         </c:choose>

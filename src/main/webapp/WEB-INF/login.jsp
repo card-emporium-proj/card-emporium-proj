@@ -7,20 +7,20 @@
 </head>
 <body>
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-    <div class="container">
+    <div class="container login">
         <h1>Please Log In</h1>
         <form action="/login" method="POST">
             <div class="form-group">
-                <label for="username">Username</label>
+                <label for="username">Username:</label>
                 <input id="username" name="username" class="form-control" type="text">
             </div>
             <div class="form-group">
-                <label for="password">Password</label>
+                <label for="password">Password:</label>
                 <input id="password" name="password" class="form-control" type="password">
             </div>
             <input type="submit" class="btn btn-primary btn-block" value="Log In">
         </form>
-        <p>Dont have an account? <a class="sign-up" href="${pageContext.request.contextPath}/register" >Sign Up Here!</a></p>
+        <p>Dont have an account? <a href="${pageContext.request.contextPath}/register"><span class="color-orange .hover-orange">Sign Up Here!</span></a></p>
     </div>
 </body>
 </html>
