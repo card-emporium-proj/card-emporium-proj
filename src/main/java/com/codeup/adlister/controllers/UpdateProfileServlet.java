@@ -3,6 +3,7 @@ package com.codeup.adlister.controllers;
 import com.codeup.adlister.dao.DaoFactory;
 import com.codeup.adlister.dao.Users;
 import com.codeup.adlister.models.User;
+import org.mindrot.jbcrypt.BCrypt;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -33,8 +34,9 @@ public class UpdateProfileServlet extends HttpServlet {
         if (loggedInUser != null && loggedInUser.getId() == user.getId()) {
             user.setUsername(req.getParameter("username"));
             user.setEmail(req.getParameter("email"));
-            user.setPassword(req.getParameter("password"));
-
+            String password = req.getParameter("password");
+            String crypt = BCrypt.hashpw(password, BCrypt.gensalt());
+            user.setPassword(crypt);
             usersDao.update(user);
             req.getSession().setAttribute("user", user);
         }
