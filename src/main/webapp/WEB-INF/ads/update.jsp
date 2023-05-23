@@ -8,7 +8,7 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-<div class="container">
+<div class="container login">
   <h1>Editing Ad: </h1>
   <form action="/ads/update" method="POST">
     <div class="form-group">

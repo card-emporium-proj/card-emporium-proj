@@ -1,10 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 :root {
     --lilac: #D3B7D8;
     --steel-pink: #A13E97;
     --eminence: #632A7E;
     --valentino: #280E3B;
-    --purple: #451E5D
+    --purple: #451E5D;
+    --navy-blue: #1a3947;
+    --organge-color: #ff6600;
+    --light-orange: rgb(252,162,110,.6);
+    --gray: #566575;
+    --peach: #EFBD9D;
+    --white: #fff;
+    --dark-grey: rgb(85,101,117);
+    --box-shadow: rgba(255, 255, 255, 0.15) 0px 15px 25px, rgba(255, 255, 255, 0.05) 0px 5px 10px;
+
+
 }
+
+body {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    font-family: Raleway, sans-serif ;
+}
+
+
 
 .sticky {
     position: sticky;
@@ -12,6 +34,60 @@
     width: 100%;
 }
 
+.text-outline {
+    text-shadow: 3px 4px 7px black;
+}
+
+.color-white {
+    color: var(--white);
+}
+
+.color-lightorange {
+    color:var(--light-orange)
+}
+
+.color-orange {
+    color: var(--organge-color)
+}
+.filter-buttons button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button-border {
+    padding: 8px 16px;
+    background-color: var(--organge-color);
+    font-weight: 700;
+    border-radius: 12px;
+    transition: all ease .3s;
+}
+
+.button-border:hover {
+    background-color: darkorange;
+    color: white;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 15px 25px, rgba(255, 255, 255, 0.05) 0px 5px 10px;}
+
+.button-border-medium {
+    background-color: unset;
+    color: var(--organge-color);
+    border: 1px solid var(--organge-color);
+    padding: 5px 10px;
+    transition: all ease .3s;
+    border-radius: 12px;
+    font-weight: 700;
+    margin-bottom: 8px;
+
+}
+
+.button-border-medium:hover {
+    box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset, rgba(255, 255, 255, 0.06) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px, rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(255, 255, 255, 0.09) 0px 16px 8px, rgba(255, 255, 255, 0.09) 0px 32px 16px;
+}
 
 .header-img {
     background-image: url('/images/wrigley.jpeg');
@@ -27,6 +103,7 @@ h1.header-text {
     font-size: 64px; /* Adjust the font size as needed */
     padding: 20px;
     margin: 0;
+    text-outline: 5px black;
 }
 
 /*---NAVBAR---*/
@@ -67,7 +144,7 @@ header {
     align-items: center;
     padding: 20px 50px;
     box-shadow: 0 1px 8px #ddd;
-    background-color: unset;
+    background-color: var(--navy-blue);
 }
 
 #nav-title {
@@ -83,29 +160,35 @@ header li {
 
 header a {
     text-decoration: none;
-    color: #555;
+    color: var(--white);
     transition: all 0.3s ease 0s;
 }
 
 header a:hover {
-    color: #b2dfdb;
+    color: var(--organge-color);
 }
 /*---END NAVBAR---*/
 
 /*---CARDS---*/
 .ads-container h1 {
-    color: black;
+    color: var(--white);
     font-size: 50px;
 }
 .ads-card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: rgb(34,42,42, 0.6);
+    border-radius: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid rgb(27,27,27);
+    margin-top: 15px;
 }
 
 .ad-card {
-    border: 5px solid #ccc;
-    border-radius: 5px;
+    border: 5px solid var(--organge-color);
+    border-radius: 10px;
     padding: 10px;
     width: 250px;
     margin: 15px;
@@ -127,7 +210,7 @@ header a:hover {
 }
 
 .ad-header {
-    color: #333333;
+    color: var(--white);
     font-size: 60px;
 }
 
@@ -165,11 +248,35 @@ header a:hover {
     margin-bottom: 0;
 }
 
+.filter-box {
+    background-color: rgb(0,0,0, .7);
+    border-radius: 12px;
+    outline: unset;
+    padding: 30px 20px 0px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: -20px;
+}
+
 .buy-button {
-    background-color: #FF9900;
-    color: white;
+    background-color: var(--organge-color);
+    color: var(--white);
     border-radius: 10px;
     padding: 5px 10px;
+    font-weight: 700;
+}
+
+.buy-button:hover {
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 15px 25px, rgba(255, 255, 255, 0.05) 0px 5px 10px;
+    background-color: darkorange;
+}
+
+input {
+    border-radius: 10px;
+    padding: 3px;
+    border: unset;
 }
 
 .filter-bar {
@@ -196,15 +303,19 @@ header a:hover {
     margin: 0 5px;
     font-size: 14px;
     border: none;
-    border-radius: 4px;
-    background-color: #e0e0e0;
-    color: #333;
+    border-radius: 6px;
+    background-color: var(--organge-color);
+    color: var(--white);
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all ease 0.3s;
+    font-weight: 700;
+    border: unset;
 }
 
 .filter-buttons button:hover {
-    background-color: #ccc;
+    background-color: darkorange;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 15px 25px, rgba(255, 255, 255, 0.05) 0px 5px 10px;
+
 }
 
 .filter-buttons button:active {
@@ -221,14 +332,14 @@ header a:hover {
 .reg-container {
     width: 400px;
     padding: 20px;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
 
 .reg-header {
-    color: black;
+    color: var(--white);
     text-align: center;
     font-size: 24px;
     font-weight: bold;
@@ -257,15 +368,18 @@ label {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    background-color: #FF9900;
+    background-color: var(--organge-color);
     border: none;
-    color: white;
-    border-radius: 5px;
+    color: var(--white);
+    border-radius: 12px;
     cursor: pointer;
+    font-weight: 700;
+    transition: all ease .3s;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: darkorange;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 15px 25px, rgba(255, 255, 255, 0.05) 0px 5px 10px;
 }
 /*---END CARDS---*/
 
@@ -292,13 +406,35 @@ label {
 .user-actions a.ui-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff9900;
-    color: #fff;
+    background-color: var(--organge-color);
+    color: var(--white);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
+    border-radius: 10px ;
 }
 
 .user-actions a.ui-button:hover {
-    background-color: #ff6600;
+    background-color: darkorange;
+    box-shadow: var(--box-shadow);
 }
 
+.login {
+    padding-top: 50px
+}
+
+.hover-orange {
+    transition: all ease .3s;
+}
+
+.hover-orange:hover {
+    color:var(--light-orange);
+}
+
+.image-add {
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.image-add:hover {
+    color: var(--organge-color)
+}

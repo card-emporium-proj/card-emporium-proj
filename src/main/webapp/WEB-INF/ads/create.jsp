@@ -9,12 +9,12 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-    <div class="container">
+    <div class="container login">
         <h1>Create a new Ad</h1>
         <form action="/ads/create" method="post">
             <div class="form-group">
                 <p>Add an image of your card here!</p>
-                <div name="image" id="open">Add Image</div>
+                <div name="image" class="image-add" id="open">Add Image</div>
                 <input id="image-url" name="image-url" hidden />
             </div>
             <div class="form-group">
