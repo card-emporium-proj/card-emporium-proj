@@ -430,3 +430,11 @@ label {
     color:var(--light-orange);
 }
 
+.image-add {
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.image-add:hover {
+    color: var(--organge-color)
+}
