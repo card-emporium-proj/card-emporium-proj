@@ -27,7 +27,7 @@
         let newPageUrl = `http://localhost:8080/ads`;
         window.location.href = newPageUrl
     }
-    setTimeout(redirect, 5000)
+    setTimeout(redirect, 3000)
 
 </script>
 
