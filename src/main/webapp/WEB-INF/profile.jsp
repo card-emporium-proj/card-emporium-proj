@@ -12,15 +12,17 @@
 <div class="container login">
     <h1>Welcome to your profile page, ${sessionScope.user.username}!</h1>
 </div>
-<div class="align-center text-center justify-center">
-    <div class="user-actions">
-        <h3>Manage Your Listings:</h3>
-        <ul>
-            <li>View all your current listings</li>
-            <li>Edit your current listings</li>
-            <li>Delete your current listings</li>
-            <a href="http://localhost:8080/ads/create" class="ui-button">Click Here To create a new Ad</a>
-        </ul>
+<div class="align-center container text-center justify-center">
+    <div class="user-actions row">
+        <div class="column">
+            <h3>Manage Your Listings:</h3>
+            <ul>
+                <li>View all your current listings</li>
+                <li>Edit your current listings</li>
+                <li>Delete your current listings</li>
+                <a href="http://localhost:8080/ads/create" class="ui-button">Click Here To create a new Ad</a>
+            </ul>
+        </div>
     </div>
 </div>
 <div class="ads-card-container">
