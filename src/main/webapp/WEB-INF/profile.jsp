@@ -12,6 +12,12 @@
 <div class="container">
     <h1>Welcome to your profile page, ${sessionScope.user.username}!</h1>
 </div>
+<div class="row">
+    <div class="column">
+        <h4>${sessionScope.user.email}</h4>
+        <a href="${pageContext.request.contextPath}/ads/profileupdate?user-id=${sessionScope.user.id}"><strong>Edit Profile Information</strong></a>
+    </div>
+</div>
 <div class="user-actions">
     <h3>Manage Your Listings:</h3>
     <ul>
