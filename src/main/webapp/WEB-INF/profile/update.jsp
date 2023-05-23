@@ -9,7 +9,7 @@
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-<div class="container">
+<div class="container login">
     <h1>Editing Your Profile: </h1>
     <form action="${pageContext.request.contextPath}/profile/update" method="post">
         <div class="form-group">
@@ -41,7 +41,7 @@
         let confirmPassword = document.getElementById(`confirm_password`).value;
         let message = document.getElementById(`message`);
         if (password === confirmPassword) {
-            message.style.color = `green`;
+            message.style.color = `darkorange`;
             message.innerHTML = `Passwords match.`
         } else {
             message.style.color = `red`;
